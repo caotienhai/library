@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Trang chủ thư viện Xanh</h1>
+  <p>Chào mừng bạn đến với thư viện Xanh, một website đươc phát triển để lưu trữ <em>Các Sách Hiếm</em>!</p>
+  <h2>Tóm lược thư viện</h2>
+  <p>Thư viện có các thống kê sau đây:</p>
+  <ul>
+    <li><strong>Số tựa sách:</strong> {{ num_books }}</li>
+    <li><strong>Số sách:</strong> {{ num_instances }}</li>
+    <li><strong>Số sách có sẵn:</strong> {{ num_instances_available }}</li>
+    <li><strong>Số tác giả:</strong> {{ num_authors }}</li>
+  </ul>
+
+  <p>You have visited this page {{ num_visits }} time{% if num_visits > 1 %}s{% endif %}.</p>
+{% endblock %}
+
